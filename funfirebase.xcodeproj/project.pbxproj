@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		260C6FB526A56B1600F10C79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C6FB426A56B1600F10C79 /* ContentView.swift */; };
 		260C6FB726A56B1900F10C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260C6FB626A56B1900F10C79 /* Assets.xcassets */; };
 		260C6FBA26A56B1900F10C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260C6FB926A56B1900F10C79 /* Preview Assets.xcassets */; };
+		26A0C2D926AE4AB500F29F4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26A0C2D826AE4AB500F29F4B /* GoogleService-Info.plist */; };
+		26A0C2DC26AF4DEC00F29F4B /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0C2DB26AF4DEC00F29F4B /* Todo.swift */; };
+		26A0C2DF26AF4E1900F29F4B /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0C2DE26AF4E1900F29F4B /* TodoViewModel.swift */; };
+		7DC3AC0E0D8B8F6C7E1B7998 /* Pods_funfirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBBF7E3260837E560A884ED /* Pods_funfirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,12 @@
 		260C6FB626A56B1900F10C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		260C6FB926A56B1900F10C79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		260C6FBB26A56B1900F10C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A0C2D826AE4AB500F29F4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26A0C2DB26AF4DEC00F29F4B /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		26A0C2DE26AF4E1900F29F4B /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		AFBBF7E3260837E560A884ED /* Pods_funfirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_funfirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1286F6B5C2E10C07E8A2DB0 /* Pods-funfirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funfirebase.debug.xcconfig"; path = "Target Support Files/Pods-funfirebase/Pods-funfirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1598A2ABB10781E5B3161D /* Pods-funfirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funfirebase.release.xcconfig"; path = "Target Support Files/Pods-funfirebase/Pods-funfirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC3AC0E0D8B8F6C7E1B7998 /* Pods_funfirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,8 @@
 			children = (
 				260C6FB126A56B1600F10C79 /* funfirebase */,
 				260C6FB026A56B1600F10C79 /* Products */,
+				2B04BC89F9E9AAFBA7674B09 /* Pods */,
+				FF45566A059509569775C06C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +65,11 @@
 		260C6FB126A56B1600F10C79 /* funfirebase */ = {
 			isa = PBXGroup;
 			children = (
+				26A0C2E426AF73C900F29F4B /* Models */,
+				26A0C2E326AF6C0A00F29F4B /* viewModel */,
 				260C6FB226A56B1600F10C79 /* funfirebaseApp.swift */,
 				260C6FB426A56B1600F10C79 /* ContentView.swift */,
+				26A0C2D826AE4AB500F29F4B /* GoogleService-Info.plist */,
 				260C6FB626A56B1900F10C79 /* Assets.xcassets */,
 				260C6FBB26A56B1900F10C79 /* Info.plist */,
 				260C6FB826A56B1900F10C79 /* Preview Content */,
@@ -69,6 +85,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		26A0C2E326AF6C0A00F29F4B /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26A0C2DE26AF4E1900F29F4B /* TodoViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		26A0C2E426AF73C900F29F4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26A0C2DB26AF4DEC00F29F4B /* Todo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B04BC89F9E9AAFBA7674B09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1286F6B5C2E10C07E8A2DB0 /* Pods-funfirebase.debug.xcconfig */,
+				CE1598A2ABB10781E5B3161D /* Pods-funfirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF45566A059509569775C06C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFBBF7E3260837E560A884ED /* Pods_funfirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 260C6FBE26A56B1900F10C79 /* Build configuration list for PBXNativeTarget "funfirebase" */;
 			buildPhases = (
+				335D906DFE0B3AA70AD3E9B1 /* [CP] Check Pods Manifest.lock */,
 				260C6FAB26A56B1600F10C79 /* Sources */,
 				260C6FAC26A56B1600F10C79 /* Frameworks */,
 				260C6FAD26A56B1600F10C79 /* Resources */,
+				A6F2E232658CA8A064E1BCBE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +179,53 @@
 			files = (
 				260C6FBA26A56B1900F10C79 /* Preview Assets.xcassets in Resources */,
 				260C6FB726A56B1900F10C79 /* Assets.xcassets in Resources */,
+				26A0C2D926AE4AB500F29F4B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		335D906DFE0B3AA70AD3E9B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-funfirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F2E232658CA8A064E1BCBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-funfirebase/Pods-funfirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-funfirebase/Pods-funfirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-funfirebase/Pods-funfirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		260C6FAB26A56B1600F10C79 /* Sources */ = {
@@ -139,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				260C6FB526A56B1600F10C79 /* ContentView.swift in Sources */,
+				26A0C2DF26AF4E1900F29F4B /* TodoViewModel.swift in Sources */,
+				26A0C2DC26AF4DEC00F29F4B /* Todo.swift in Sources */,
 				260C6FB326A56B1600F10C79 /* funfirebaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +360,7 @@
 		};
 		260C6FBF26A56B1900F10C79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1286F6B5C2E10C07E8A2DB0 /* Pods-funfirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +383,7 @@
 		};
 		260C6FC026A56B1900F10C79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1598A2ABB10781E5B3161D /* Pods-funfirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
